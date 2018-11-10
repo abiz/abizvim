@@ -7,7 +7,8 @@ Plug 'vim-airline/vim-airline-themes'
 Plug 'joshdick/onedark.vim'
 Plug 'scrooloose/nerdtree'
 Plug 'scrooloose/nerdcommenter'
-Plug 'ctrlpvim/ctrlp.vim'
+Plug 'sheerun/vim-polyglot'
+Plug 'gabesoft/vim-ags'
 
 call plug#end()
 
@@ -40,13 +41,7 @@ let g:airline_theme='onedark'
 
 colorscheme onedark
 
+" Mappings
 map <Leader>o :NERDTreeToggle<CR>
 map <Leader>f :bn<CR>
 map <Leader>b :bp<CR>
-
-let &t_SI = "\e[6 q"
-let &t_EI = "\e[2 q"
-augroup myCmds
-    au!
-    autocmd VimEnter * silent !echo -ne "\e[2 q"
-augroup END
