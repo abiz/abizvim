@@ -9,6 +9,7 @@ Plug 'scrooloose/nerdtree'
 Plug 'scrooloose/nerdcommenter'
 Plug 'sheerun/vim-polyglot'
 "Plug 'gabesoft/vim-ags'
+Plug 'ap/vim-buftabline'
 
 call plug#end()
 
@@ -49,3 +50,5 @@ colorscheme jellybeans
 map <Leader>o :NERDTreeToggle<CR>
 map <Leader>f :bn<CR>
 map <Leader>b :bp<CR>
+map <Leader>t :vsplit<CR>
+map <Leader>y :split<CR>
