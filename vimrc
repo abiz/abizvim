@@ -52,3 +52,6 @@ map <Leader>f :bn<CR>
 map <Leader>b :bp<CR>
 map <Leader>t :vsplit<CR>
 map <Leader>y :split<CR>
+map <Leader>r :!%:p<CR>
+inoremap <TAB> <C-T>
+inoremap <S-TAB> <C-D>
