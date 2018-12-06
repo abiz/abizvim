@@ -33,9 +33,9 @@ let mapleader=" "
     "set guioptions-=r  "scrollbar
 "endif
 
-if has('termguicolors')
-    set termguicolors
-endif
+"if has('termguicolors')
+    "set termguicolors
+"endif
 
 "let g:airline#extensions#tabline#enabled = 1
 "let g:airline_theme='onedark'
