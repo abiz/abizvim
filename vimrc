@@ -3,12 +3,9 @@ set nocompatible
 call plug#begin('~/.vim/plugged')
 
 Plug 'itchyny/lightline.vim'
-"Plug 'joshdick/onedark.vim'
 Plug 'nanotech/jellybeans.vim'
-Plug 'scrooloose/nerdtree'
 Plug 'scrooloose/nerdcommenter'
 Plug 'sheerun/vim-polyglot'
-"Plug 'gabesoft/vim-ags'
 Plug 'ap/vim-buftabline'
 
 call plug#end()
@@ -25,31 +22,16 @@ set noshowmode
 set laststatus=2
 set splitbelow
 set splitright
+set nowrap
 let mapleader=" "
-
-"if has('gui_running')
-    "set guioptions-=m  "menu bar
-    "set guioptions-=T  "toolbar
-    "set guioptions-=r  "scrollbar
-"endif
-
-"if has('termguicolors')
-    "set termguicolors
-"endif
-
-"let g:airline#extensions#tabline#enabled = 1
-"let g:airline_theme='onedark'
-
-let g:lightline = {
-    \ 'colorscheme': 'jellybeans',
-    \ }
+let g:lightline = {'colorscheme': 'jellybeans' }
 
 colorscheme jellybeans
 
 " Mappings
-map <Leader>o :NERDTreeToggle<CR>
 map <Leader>f :bn<CR>
 map <Leader>b :bp<CR>
+map <Leader>d :bd<CR>
 map <Leader>t :vsplit<CR>
 map <Leader>y :split<CR>
 map <Leader>r :!%:p<CR>
